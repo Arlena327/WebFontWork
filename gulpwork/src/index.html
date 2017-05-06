@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>百度一下</title>
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="fonts/iconstyle.css" />
+</head>
+
+<body>
+<div class="wrap">
+    <div class="bgskin"></div>
+    <div class="header">
+        <!-- 天气 -->
+        <div class="weather" id="weathermore">
+            <div class="weather-outline">
+                <span class="iconfont icon-weather">&#xe60a;</span>
+                <span class="weather-num">39°</span>
+                <div class="weather-status">
+                    <p>深圳</p>
+                    <p>空气 59</p>
+                </div>
+                <span class="iconfont icon-down">&#xe614;</span>
+            </div>
+            <div class="weather-shield">
+                <span class="iconfont icon-up">&#xe614;</span>
+                <div class="weather-datail-status">
+                    <div class="weather-gps">
+                        <span><i class="iconfont icon-position">&#xe60f;</i></span>
+                        <span class="w-loc">深圳</span>
+                    </div>
+                    <div class="weather-tem">
+                        <span class="tem-number">28°</span>
+                        <i class="iconfont icon-weather">&#xe60a;</i>
+                        <p>中雨转阵雨 微风<2级</p>
+                    </div>
+                    <div class="weather-sky">
+                        <p>30°/26°</p>
+                        <p>空气质量：33</p>
+                    </div>
+                    <a href="" class="more-weather">查看更多</a>
+                </div>
+                <div class="weather-week">
+                    <div>
+                        <p>明天</p>
+                        <i class="iconfont icon-weather-day">&#xe60a;</i>
+                        <p>30°/26°</p>
+                    </div>
+                    <div>
+                        <p>周日</p>
+                        <i class="iconfont icon-weather-day">&#xe60a;</i>
+                        <p>30°/26°</p>
+                    </div>
+                    <div>
+                        <p>周一</p>
+                        <i class="iconfont icon-weather-day">&#xe60a;</i>
+                        <p>30°/26°</p>
+                    </div>
+                    <div>
+                        <p>周二</p>
+                        <i class="iconfont icon-weather-day">&#xe60a;</i>
+                        <p>30°/26°</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 换肤 -->
+        <div class="change-skin" id="c_skin">
+            <span>换肤</span>
+        </div>
+
+        <div class="c_skin-layer">
+            <div class="c_skin-header">
+                <div class="c_skin-layer-center">
+                    <ul class="c_skin-nav">
+                        <li class="a1 select">游戏</li>
+                        <li class="a2">卡通</li>
+                        <li class="a3">明星</li>
+                        <li class="a4">小清新</li>
+                    </ul>
+                    <a class="c_skin-up">收起</a>
+                </div>
+            </div>
+            <div class="c_skin-body">
+                <div class="c_skin-layer-center">
+                    <div class="c_skin-content">
+                        <div class="c_skin-type select">
+                            <ul>
+                                <li class="skin-pro0"><img src="images/721.jpg"></li>
+                                <li class="skin-pro1"><img src="images/724.jpg"></li>
+                                <li class="skin-pro1 skin-pro2"><img src="images/729.jpg"></li>
+                                <li class="skin-pro0"><img src="images/731.jpg"></li>
+                            </ul>
+                        </div>
+                        <div class="c_skin-type">
+                            <ul>
+                                <li class="skin-pro0"><img src="images/749.jpg"></li>
+                                <li class="skin-pro1"><img src="images/754.jpg"></li>
+                                <li class="skin-pro1 skin-pro2"><img src="images/757.jpg"></li>
+                                <li class="skin-pro0"><img src="images/760.jpg"></li>
+                            </ul>
+                        </div>
+                        <div class="c_skin-type">
+                            <ul>
+                                <li class="skin-pro0"><img src="images/449.jpg"></li>
+                                <li class="skin-pro1"><img src="images/452.jpg"></li>
+                                <li class="skin-pro1 skin-pro2"><img src="images/457.jpg"></li>
+                                <li class="skin-pro0"><img src="images/460.jpg"></li>
+                            </ul>
+                        </div>
+                        <div class="c_skin-type">
+                            <ul>
+                                <li class="skin-pro0"><img src="images/2.jpg"></li>
+                                <li class="skin-pro1"><img src="images/65.jpg"></li>
+                                <li class="skin-pro1 skin-pro2"><img src="images/74.jpg"></li>
+                                <li class="skin-pro0"><img src="images/114.jpg"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边菜单 -->
+        <div class="nav">
+            <a href="#">糯米</a>
+            <a href="#">新闻</a>
+            <a href="#">hao123</a>
+            <a href="#">地图</a>
+            <a href="#">视频</a>
+            <a href="#">贴吧</a>
+            <a href="#" class="font_nor">登录</a>
+            <a href="#" class="font_nor" onmouseover="show()">设置</a>
+            <a href="#" class="button" onmouseover="moreshow()">更多产品</a>
+        </div>
+        <div id="hidemenu" class="add" onmouseover="show()" onmouseout="hide()">
+            <div class="addcon">
+                <a>搜索设置</a>
+                <a>高级搜索</a>
+                <a>搜索设置</a>
+                <a>搜索设置</a>
+            </div>
+        </div>
+        <div id="morepro" class="morepro" onmouseover="moreshow()" onmouseout="morehide()">
+            <p class="moretitle">更多产品</p>
+            <a href=""><span class="music"></span>音乐</a>
+            <a href=""><span class="pic"></span>图片</a>
+            <a href=""><span class="konw"></span>知道</a>
+            <a href=""><span class="konwsheet"></span>文库</a>
+            <a href=""><span class="topbang "></span>风云榜</a>
+            <a href=""><span class="tuiguang"></span>百度推广</a>
+            <p class="morelink"><a href="">全部产品 >></a></p>
+        </div>
+
+
+        <div class="logoDIV"><a href=""><img src="images/bd_logo1.png" width="270px"></a></div>
+        <form>
+            <span class="seachfield">
+                <input type="text" class="search_text" name="searchword" id="searchword">
+                <a class="cameraico"></a>
+            </span>
+            <input type="submit" value="百度一下" class="button" for="searchword">
+        </form>
+    </div>
+
+    <!-- 主体内容 -->
+    <div class="contain">
+
+        <!--content-->
+        <div class="page-content">
+            <div class="menu-list">
+                <span class="menu-item curren">关注</span>
+                <span class="menu-item">推荐</span>
+                <span class="menu-item">奥运</span>
+            </div>
+
+            <!-- 我的关注 -->
+            <div class="center-content" id="center-content0">
+                <div class="tab-wraps">
+                    <section class="plus">
+                        <div class="plus-title normal-title">
+                            <h2>我的导航</h2>
+                            <a class="plus-edit">
+                                <i class="iconfont icon-edit">&#xe607;</i>
+                                <ul>
+                                    <li class="edit-act">编辑</li>
+                                    <li class="put-top">置顶</li>
+                                    <li class="parent-close">关闭</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="plus-title edit-title">
+                            <h2>导航编辑</h2>
+                            <i class="iconfont icon-back"></i>
+                        </div>
+                        <div class="plus-content nav-list">
+                            <a href="#"><span>hao123</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>图片</span><i class="iconfont icon-navdelect"></i></a> 
+                            <a href="#"><span>小说</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>爱奇艺</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>电影</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>电视剧</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>综艺</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>彩票开奖</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>美女</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#"><span>音乐</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#""><span>笑话</span><i class="iconfont icon-navdelect"></i></a>
+                            <a href="#" class="edit-addnav"><span><i class="iconfont icon-add"></i></span></a>
+                        </div>
+                    </section>
+                    <section class="plus">
+                        <div class="plus-title">
+                            <h2>生活服务</h2>
+                            <a class="plus-edit">
+                                <i class="iconfont icon-edit">&#xe607;</i>
+                                <ul>
+                                    <li>置顶</li>
+                                    <li class="parent-close">关闭</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="plus-content">
+                            <div class="life-zone">
+                                <div class="gps-info">
+                                    <p>点击定位，查看附近位置信息</p>
+                                    <span class="button-position">
+                                        <i class="iconfont icon-position">&#xe60f;</i>
+                                        <button>定位</button>
+                                    </span>
+                                </div>
+                                <ul class="life-list">
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-movie"></i>
+                                            <p>电影</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-tuan"></i>
+                                            <p>团购</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-takeout"></i>
+                                            <p>外卖</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-taxi"></i>
+                                            <p>打车</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-hotel"></i>
+                                            <p>酒店</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-food"></i>
+                                            <p>美食</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-ktv"></i>
+                                            <p>KTV</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-chong"></i>
+                                            <p>充值</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-feiji"></i>
+                                            <p>飞机票</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-huoche"></i>
+                                            <p>火车票</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-qichepiao"></i>
+                                            <p>汽车票</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-bus"></i>
+                                            <p>公交站</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-lvxing"></i>
+                                            <p>旅行</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-yuyueguahao"></i>
+                                            <p>挂号</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-jingqumenpiao"></i>
+                                            <p>门票</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="iconfont icon-cf-c28"></i>
+                                            <p>银行</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="plus-more">
+                            <span>展开全部</span>
+                            <i class="iconfont icon-arrow"></i>
+                        </div>
+                    </section>
+                    <section class="plus">
+                        <div class="plus-title">
+                            <h2>交通路况</h2>
+                            <a class="plus-edit">
+                                <i class="iconfont icon-edit">&#xe607;</i>
+                                <ul>
+                                    <li>置顶</li>
+                                    <li class="parent-close">关闭</li>
+                                </ul>
+                            </a>
+                        </div>
+                        <div class="plus-content">
+                            <div class="traffic">
+                                <div class="add-address">
+                                    <a href=""><i class="iconfont icon-add"></i>设置家和公司地址</a>
+                                    <p>随时随地，了解实时路况</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="tab-foot">管理我的关注</div>
+            </div>
+
+            <!-- 新闻推荐 -->
+            <div class="center-content" id="center-content1">
+                <div class="tab-wraps clearfix">
+                    <div class="tab-news">
+                        <div class="news-tips">
+                            <div class="left-line"></div>
+                            <div class="tips-content">
+                                <span>以下信息根据您的兴趣推荐</span>
+                            </div>
+                            <div class="right-line"></div>
+                        </div>
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-head">
+                                    <h2>外媒：中国告别“唯金牌论” 选手展示个性</h2>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news1.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news2.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news3.jpg"></div>
+                                </div>
+                                <div class="news-from">
+                                    <span class="news-net">光明网</span>
+                                    <span class="news-time">13:58</span>
+                                    <span class="news-iconhot">热点</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-head">
+                                    <h2>向艳梅斩获金牌 一百多名父老乡亲聚集观看她的比赛</h2>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news4.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news5.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news6.jpg"></div>
+                                </div>
+                                <div class="news-from">
+                                    <span class="news-net">光明网</span>
+                                    <span class="news-time">13:58</span>
+                                    <span class="news-iconhot">热点</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-head">
+                                    <h2>北京晨报：多元奥运 不变初心</h2>
+                                </div>
+                                <div class="news-from">
+                                    <span class="news-net">光明网</span>
+                                    <span class="news-time">13:58</span>
+                                    <span class="news-iconhot">热点</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-head">
+                                    <h2>心疼!铁打的福原爱流水的大魔王 张怡宁负分让球</h2>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news7.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news8.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news9.jpg"></div>
+                                </div>
+                                <div class="news-from">
+                                    <span class="news-net">光明网</span>
+                                    <span class="news-time">13:58</span>
+                                    <span class="news-iconhot">热点</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item newsinfo">
+                            <a href="">
+                                <div class="newsinfo-right">
+                                    <div class="news-head">
+                                        <h2>傅园慧：翻着白眼游到边 用生命在游泳</h2>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="news-net">光明网</span>
+                                        <span class="news-time">13:58</span>
+                                        <span class="news-iconhot">热点</span>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news13.jpg"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item">
+                            <a href="">
+                                <div class="news-head">
+                                    <h2>有一位段子手老妈，傅园慧的洪荒之力真是祖传的</h2>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news10.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news11.jpg"></div>
+                                    <div class="news-imginline"><img src="images/news12.jpg"></div>
+                                </div>
+                                <div class="news-from">
+                                    <span class="news-net">光明网</span>
+                                    <span class="news-time">13:58</span>
+                                    <span class="news-iconhot">热点</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 热点切换 -->
+                    <div class="hotword-list">
+                        <div class="hotword-head">
+                            <h2>实时热点</h2>
+                            <a class="refresh"><i class="iconfont icon-change">&#xe618;</i>换一换</a>
+                        </div>
+                        <ul>
+                            <li class="hotword-item"><a href="">钓鱼岛附近船相撞</a><span class="hotletter">热</span></li>
+                            <li class="hotword-item"><a href="">砸断手指为碰瓷</a><span class="hotletter">热</span></li>
+                            <li class="hotword-item"><a href="">男护士跪地救人</a><span class="hotletter">热</span></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                            <li class="hotword-item"><a href="">女子不满投毒闺蜜</a></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                            <li class="hotword-item"><a href="">女子不满投毒闺蜜</a></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                            <li class="hotword-item"><a href="">女子不满投毒闺蜜</a></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                            <li class="hotword-item"><a href="">女子不满投毒闺蜜</a></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                            <li class="hotword-item"><a href="">女子不满投毒闺蜜</a></li>
+                            <li class="hotword-item"><a href="">拒服兵役被罚三万</a></li>
+                            <li class="hotword-item"><a href="">刘嘉玲讽谢娜</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="center-content" id="center-content2">
+                <div class="tab-wraps">
+                    <div class="tab-content">
+                        <div class="golds-total">
+                            <div class="gold-title">
+                                <h2>金牌榜</h2>
+                            </div>
+                            <div class="gold-content">
+                                <table class="gold-table">
+                                    <thead>
+                                        <tr>
+                                            <th>排名</th>
+                                            <th><img src="images/gold1.jpg"></th>
+                                            <th><img src="images/gold2.jpg"></th>
+                                            <th><img src="images/gold3.jpg"></th>
+                                            <th>合计</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>1</span><span><img src="images/flag_usa.jpg"></span><span>美国</span></td>
+                                            <td>11</td>
+                                            <td>11</td>
+                                            <td>10</td>
+                                            <td>32</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>2</span><span><img src="images/flag_china.jpg"></span><span>中国</span></td>
+                                            <td>10</td>
+                                            <td>5</td>
+                                            <td>8</td>
+                                            <td>23</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>3</span><span><img src="images/flag_japan.jpg"></span><span>日本</span></td>
+                                            <td>6</td>
+                                            <td>1</td>
+                                            <td>11</td>
+                                            <td>18</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr><td colspan="5">查看榜单</td></tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="news-item newsinfo">
+                            <a href="">
+                                <div class="newsinfo-right">
+                                    <div class="news-head">
+                                        <h2>傅园慧：翻着白眼游到边 用生命在游泳</h2>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="news-net">光明网</span>
+                                        <span class="news-time">13:58</span>
+                                        <span class="news-iconhot">热点</span>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news13.jpg"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item newsinfo">
+                            <a href="">
+                                <div class="newsinfo-right">
+                                    <div class="news-head">
+                                        <h2>奥运第5比赛日综述：中国进2金 中国男子柔道创历史</h2>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="news-net">光明网</span>
+                                        <span class="news-time">13:58</span>
+                                        <span class="news-iconhot">热点</span>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news14.jpg"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="news-item newsinfo">
+                            <a href="">
+                                <div class="newsinfo-right">
+                                    <div class="news-head">
+                                        <h2>视频-福原爱儿时打球视频曝光 爱哭爱“卖萌”</h2>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="news-net">光明网</span>
+                                        <span class="news-time">13:58</span>
+                                        <span class="news-iconhot">热点</span>
+                                    </div>
+                                </div>
+                                <div class="new-content">
+                                    <div class="news-imginline"><img src="images/news15.jpg"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!--content end-->
+
+        <!-- 页面返回顶部 -->
+        <div class="scroll-top" id="scroll-top">
+            <div class="toTop">TOP</div>
+        </div>
+    </div>
+
+    <!-- 尾部 footer -->
+    <div class="footer">
+        <div class="f_con">
+            <div class="f_inline">
+                <img src="images/zbios_62c636fe.png">
+                <span>
+                    <b>手机百度</b><br/>
+                    <a>快人一步</a>
+                </span>
+            </div>
+            <div class="f_inline">
+                <img src="images/zbios_62c636fe.png">
+                <span>
+                    <b>百度糯米</b><br/>
+                    <a>一元大餐</a>
+                </span>
+            </div>
+        </div>
+        <div class="f_con">
+            <p>
+                <a href="#">把百度设为首页</a>
+                <a href="#" class="ml50">关于百度</a>
+                <a href="#" class="ml50">About Baidu</a>
+            </p>
+            <p>©2016 Baidu <a href="#">使用百度前必读</a> <a href="#">意见反馈</a> 京ICP证030173号<i class="icon10"></i></p>
+            <p><i class="icon11"></i>京公网安备11000002000001号</p>
+        </div>
+    </div> 
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/layout.js"></script>
+</body>
+</html>

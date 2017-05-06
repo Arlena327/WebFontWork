@@ -1,0 +1,50 @@
+ @charset "utf-8";
+/* CSS Document */
+/*for login*/
+
+html,body{height: 100%;}
+body{background: #63bad8 url("../images/bg.jpg") repeat-x scroll 50% 0;}
+.loginwrap{
+	width: 470px;
+	position: relative;
+	left: 50%;
+	margin-left: -235px;
+	top: 50%;
+	margin-top: -200px;
+	border: 1px solid #dedede;
+	background: #fff;
+}
+.loginheader{
+    height: 50px;
+    background: #c5e6ea none repeat scroll 0 0;
+    border-bottom: 1px solid #b2ccd0;
+}
+.darkbanner{
+    background: #424242 none repeat scroll 0 0;
+    margin: 20px 0 0 -18px;
+    padding: 8px 10px 10px 40px;
+    position: relative;
+    width: 380px;
+}
+h2{
+    color: #fff;
+    display: inline;
+    font-size: 24px;
+    margin-left: 10px;
+}
+.darkbannerwrap{
+    background: rgba(0, 0, 0, 0) url("../images/aiwrap.png") repeat scroll 0 0;
+    position: absolute;
+	width: 18px;
+	left: 0;
+	display: inline-block;
+	bottom: -10px;
+	height: 10px;
+}
+.loginform{
+    background-color: #fff;
+    padding: 20px;
+}
+.loginform .checkbox{float: right;}
+.loginform .checkbox input[type=checkbox]{margin-top: 5px;}
+.loginform .checkbox small{color: #898989;}

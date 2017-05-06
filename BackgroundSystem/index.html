@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>后台管理系统</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- css -->
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+     <div class="container-fluid">
+      <!--左侧内容-->
+      <div class="left-side">
+        <div class="logo">
+          <a href=""><img src="images/logo.png"></a>
+        </div>
+        <!--左侧导航-->
+        <div class="left-content">
+          <ul class="nav sidebar-menu custom-nav">
+            <li class="header">主要功能</li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-dashboard"></i> <span>行政管理</span> <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v2</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-files-o"></i>
+                <span>行政管理</span>
+              </a>
+              <ul class="treeview-menu" style="display: none;">
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li class=""><a href="#">行政管理 v1</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-th"></i> <span>行政管理</span>
+              </a>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-pie-chart"></i>
+                <span>行政管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-laptop"></i>
+                <span>行政管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+                <li><a href="#">行政管理 v1</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-edit"></i> <span>财务管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#">财务管理 v1</a></li>
+                <li><a href="#">财务管理 v1</a></li>
+                <li><a href="#">财务管理 v1</a></li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-table"></i> <span>财务管理</span>
+                <i class="fa fa-angle-left pull-right"></i>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="#">财务管理 v1</a></li>
+                <li><a href="#">财务管理 v1</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-calendar"></i> <span>财务管理</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-envelope"></i> <span>财务管理</span>
+              </a>
+            </li>
+            <li><a href="#"><i class="fa fa-book"></i> <span>财务管理</span></a></li>
+            <li class="header">系统设置</li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> <span>系统设置1</span></a></li>
+            <li><a href="#"><i class="fa fa-circle-o"></i> <span>系统设置2</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!--中间内容-->
+      <div class="main-content">
+
+        <!--个人中心-->
+        <div class="header-section">
+          <a class="toggle-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+          <form class="searchform" method="post" action="">
+            <input class="form-control" type="text" placeholder="Search here..." name="keyword">
+          </form>
+          <div class="menu-right">
+            <ul class="notification-menu">
+              <li><a href="" class="info-number dropdown-toggle"><i class="fa fa-bell-o"></i>新消息<span class="badge">8</span></a></li>
+              <li>
+                <a class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>个人中心</a>
+                <ul class="dropdown-menu usermenu">
+                  <li><a href="">个人设置</a></li>
+                  <li><a href="">个人设置</a></li>
+                  <li><a href="">个人设置</a></li>
+                  <li><a href="">系统设置</a></li>
+                </ul>
+              </li>
+              <li><a href="">退出</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!--wrapper-->
+        <div class="wrapper">
+          <div class="page-heading">
+            <h3>基础信息录入</h3>
+            <ol class="breadcrumb">
+              <li><a href="#">当前位置：</a></li>
+              <li><a href="#">行政管理</a></li>
+              <li class="active">基础信息录入</li>
+            </ol>
+          </div>
+          <div class="content">
+            <div class="row">
+              <div class="col-sm-12">
+                <!--表格信息-->
+                <section class="panel">
+                  <div class="panel-body">
+                    <div class="table-search clearfix">
+                      <div class="table-length">
+                        <select class="form-control">
+                          <option selected="selected">10</option>
+                          <option>20</option>
+                          <option>30</option>
+                        </select>
+                        <label>每页10条</label>
+                      </div>
+                      <div class="table-filter">
+                        <label>搜索</label>
+                        <input class="form-control" type="text" name="" placeholder="请输入查找关键字...">
+                      </div>
+                    </div>
+                    <div class="table-responsive">
+                      <table class="table table-bordered table-hover table-striped memble-table">
+                        <thead>
+                          <tr>
+                            <th><input class="boxCheck1" type="checkbox" /></th>
+                            <th>編號</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>所在部门</th>
+                            <th>身份证</th>
+                            <th>人员身份</th>
+                            <th>人员状态</th>
+                            <th>入职日期</th>
+                            <th>面试人</th>
+                            <th>操作</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>1</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>2</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>3</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>4</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>5</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>6</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>7</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>8</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>9</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                          <tr>
+                              <td><input class="boxCheck1" type="checkbox" /></td>
+                              <td>10</td>
+                              <td>Apple</td>
+                              <td>女</td>
+                              <td>行政部</td>
+                              <td>524123456878952265</td>
+                              <td>278.4</td>
+                              <td>在职在岗</td>
+                              <td>2014-11-12<br />12:10:35</td>
+                              <td>管理員</td>
+                              <td><a href="" class="fa fa-edit"></a><a href="" class="fa fa-trash"></a></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!--分页-->
+                    <div class="table-page">
+                      <div class="dataTables_info">显示1 to 10 of 57 每页</div>
+                      <div class="dataTables_paginate">
+                        <ul class="pagination">
+                          <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                          <li><a href="#">1</a></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </section>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     </div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/sidebar-menu.js"></script>
+    <script>
+      $.sidebarMenu($('.sidebar-menu'))
+    </script>
+  </body> 
+</html>

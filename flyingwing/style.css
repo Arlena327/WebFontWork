@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+.header{
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	top:0;
+	color: #fff;
+	background: #0099cc;
+	text-align: center;
+	vertical-align: middle;
+}
+.content {
+	width:100%;
+	position: absolute;
+	top:100px;
+	bottom: 50px;
+}
+.content>div{
+	margin-bottom: -800px;
+	padding-bottom: 800px;
+}
+.content .col-main {
+	float:left; 
+	width:100%; 
+	background:#ccc;
+}
+.main{margin-right: 190px;margin-left: 190px;}
+.col-sub { 
+	float:left; 
+	width:190px;
+	background:#f00; 
+	margin-left:-100%; 
+	background: #ff6666;
+}
+.col-extra {
+	float:left; 
+	width:190px; 
+	background:#00f; 
+	margin-left:-190px; 
+	background: #ffff66;
+}
+.footer{
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom:0;
+	color: #fff;
+	background: #333;
+	text-align: center;
+}

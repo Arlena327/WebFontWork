@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+a[href]:hover{color: #35b558;}
+/************Nav******************/
+.main-menu ul{
+    border-top: 2px solid #099e6a;
+}
+.main-menu ul li.active{
+	background: #0aa770;
+}
+.sitebar{
+    border: 1px solid #84d7ba;
+    border-top: none;
+}
+.sitebar .title {
+    color: #0aa770;
+}
+/************Nav end************/
+.linkad{
+    border: 1px solid #84d7ba;
+}
+.hotlink{
+	color: #0aa770;
+}

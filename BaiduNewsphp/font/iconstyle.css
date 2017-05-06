@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+
+/***********phone start************/
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.eot'); /* IE9*/
+    src: url('iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('iconfont.woff') format('woff'), /* chrome、firefox */
+    url('iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+/*****************icon************************/
+
+.icon-login{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+.icon-skin{
+    font-size: 20px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.icon-add{
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.icon-camera:after{
+    content: "\e612";
+    position: absolute;
+    font-size: 20px;
+    left: -40px;
+    top: 8px;
+    color: #666;
+}
+.icon-arrowdown:before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    left: -18px;
+    border: 4px solid transparent;
+    border-top-color: #717077;
+}
+.icon-feedback{
+    width: 16px;
+    vertical-align: top;
+    margin-top: 7px;
+    margin-right: 5px;
+}

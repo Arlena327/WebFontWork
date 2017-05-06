@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>百度一下</title>
+    <link type="text/css" rel="stylesheet" href="style/index.css" />
+    <script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+</head>
+<!--[if IE]>
+<script>
+document.createElement("header");
+document.createElement("footer");
+document.createElement("nav");
+</script>
+<![endif]--> 
+
+<!--[if IE 8]>
+<style>
+nav{display:inline-block;}
+form .button{margin-top:1px;}
+</style>
+<![endif]--> 
+<body>
+<div class="wrap">
+    <header>
+        <nav>
+            <a href="#">糯米</a>
+            <a href="#">新闻</a>
+            <a href="#">hao123</a>
+            <a href="#">地图</a>
+            <a href="#">视频</a>
+            <a href="#">贴吧</a>
+            <a href="#" class="font_nor">登录</a>
+            <a href="#" class="font_nor" onmouseover="show()">设置</a>
+            <a href="#" class="button" onmouseover="moreshow()">更多产品</a>
+        </nav>
+        <div id="hidemenu" class="add" onmouseover="show()" onmouseout="hide()">
+            <ul>
+                <li>搜索设置</li>
+                <li>高级搜索</li>
+                <li>搜索设置</li>
+                <li>搜索设置</li>
+            </ul>
+        </div>
+        <div id="morepro" class="morepro" onmouseover="moreshow()" onmouseout="morehide()">
+            <div class="morecon">
+                <p class="moretitle">更多产品</p>
+                <a href=""><span class="music"></span>音乐</a                 <a href=""><span class="pic"></span>图片</a>
+                <a href=""><span class="konw"></span>知道</a>
+                <a href=""><span class="konwsheet"></span>文库</a>
+                <a href=""><span class="topbang"></span>风云榜</a>
+                <a href=""><span class="tuiguang"></span>百度推广</a>
+                <p><a href="">全部产品 >></a></p>
+            </div>
+        </div>
+    </header>
+    <div class="contain">
+        <div><a href="www.baidu.com"><img src="images/bd_logo1.png" width="270px"></a></div>
+        <form>
+            <span class="seachfield">
+                <input type="text" class="search_text" name="searchword" id="searchword">
+                <span class="cameraico"></span>
+            </span>
+            <input type="submit" value="百度一下" class="button" for="searchword">
+        </form>
+    </div>
+    <footer>
+        <div class="f_con">
+            <div class="f_inline">
+                <img src="images/zbios_62c636fe.png">
+                <span>
+                    <b>手机百度</b><br/>
+                    <a>快人一步</a>
+                </span>
+            </div>
+            <div class="f_inline">
+                <img src="images/zbios_62c636fe.png">
+                <span>
+                    <b>百度糯米</b><br/>
+                    <a>一元大餐</a>
+                </span>
+            </div>
+        </div>
+        <div class="f_con">
+            <p>
+                <a href="#">把百度设为首页</a>
+                <a href="#" class="ml50">关于百度</a>
+                <a href="#" class="ml50">About Baidu</a>
+            </p>
+            <p>©2016 Baidu <a href="#">使用百度前必读</a> <a href="#">意见反馈</a> 京ICP证030173号<i class="icon10"></i></p>
+            <p><i class="icon11"></i>京公网安备11000002000001号</p>
+        </div>
+    </footer>
+</div>
+<script>
+    var ddd = document.getElementById("hidemenu");
+    var more = document.getElementById("morepro");
+    function show(){
+        ddd.style.display="block";
+    }
+    function hide(){
+        ddd.style.display="none";
+    }
+    function moreshow(){
+        more.style.display="block";
+
+        var wh = document.body.scrollHeight;
+        more.style.height = wh+"px";
+    }
+    function morehide(){
+        more.style.display="none";
+    }
+
+</script>
+</body>
+</html>

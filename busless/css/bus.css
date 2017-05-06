@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html,
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.module {
+  width: 700px;
+  height: 500px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -250px;
+  margin-left: -350px;
+  overflow: auto;
+}
+.module-top {
+  background: #389cff;
+  overflow: hidden;
+}
+.module-top .module-topleft {
+  float: left;
+  padding: 12px;
+}
+.module-top .module-topleft span {
+  color: #fff;
+  display: block;
+  text-align: center;
+  background: #0583ff;
+}
+.module-top .module-topleft span.bus-num {
+  font-size: 36pt;
+  background: none;
+}
+.module-top .module-topright {
+  color: #fff;
+  padding: 12px;
+  float: left;
+}
+.module-top .module-topright h2 {
+  margin-top: 8px;
+}
+.module-top .module-topright p {
+  font-size: 14px;
+  padding: 5px 0 0;
+}
+.module-top .module-topright p a {
+  margin-right: 40px;
+}
+.module-content {
+  border: 2px solid #389cff;
+  background: #fff;
+}
+.module-content ul {
+  overflow: hidden;
+  padding: 8px;
+}
+.module-content ul li {
+  cursor: pointer;
+  float: left;
+  height: 132px;
+  line-height: 14px;
+  text-align: center;
+  width: 26px;
+  box-sizing: border-box;
+  word-break: normal;
+  border: 1px solid #fff;
+}
+.module-content ul li a {
+  color: #333;
+  display: block;
+}
+.module-content ul li a span {
+  display: inline-block;
+  padding-bottom: 10px;
+  line-height: 120%;
+  font-size: 14px;
+}
+.module-content ul li:hover {
+  border: 1px solid #389cff;
+}

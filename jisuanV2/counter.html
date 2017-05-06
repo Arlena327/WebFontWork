@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="counter">
+        	<h2>计算器</h2>
+        	<form>
+        		<!--计算结果显示框-->
+        		<div class="calsu-screen">
+        			<input value="0" id="count-sreen" type="text" name="" onfocus="this.blur();">
+        		</div>
+
+                <!--清除-->
+                <div class="calsu-c">
+                    <ul>
+                        <li onclick="clearAll()" class="btn-three btn-red">C</li>
+                        <li onclick="backspace()" class="btn-three btn-red">←</li>
+                    </ul>
+                </div>
+
+        		<!--计算数字区-->
+        		<div class="calsu-btn">
+        			<ul>
+        				<li onclick="count(1)">1</li>
+        				<li onclick="count(2)">2</li>
+        				<li onclick="count(3)">3</li>
+        				<li onclick="count(4)">4</li>
+        				<li onclick="count(5)">5</li>
+        				<li onclick="count(6)">6</li>
+        				<li onclick="count(7)">7</li>
+        				<li onclick="count(8)">8</li>
+        				<li onclick="count(9)">9</li>
+        				<li onclick="count(0)" class="btn-double">0</li>
+        				<li onclick="point(this)">.</li>
+        			</ul>
+        		</div>
+
+                <!--计算工具区-->
+        		<div class="calsu-tool">
+        			<ul>
+        				<li onclick="calculation(this)" id="a1">+</li>
+                        <li onclick="trifunc(this)" id="a5">sin</li>
+                        <li onclick="trifunc(this)" id="a8">1/x</li>
+        				<li onclick="calculation(this)" id="a2">-</li>
+                        <li onclick="trifunc(this)" id="a6">cos</li>
+                        <li onclick="trifunc(this)" id="a9">%</li>
+        				<li onclick="calculation(this)" id="a3">x</li>
+                        <li onclick="trifunc(this)" id="a7">tan</li>
+                        <li onclick="trifunc(this)" id="a10">√￣</li>
+        				<li onclick="calculation(this)" id="a4">÷</li>
+        				<li onclick="equal()" class="btn-red btn-double">=</li>
+        			</ul>
+        		</div>
+        	</form>
+        </div>
+    </div>
+    <script type="text/javascript" src="layout.js"></script>
+</body>
+</html>

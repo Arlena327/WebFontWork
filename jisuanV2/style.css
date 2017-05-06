@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html, body{
+	height: 100%;
+}
+body {
+	font-size:12px;
+	font-family:Arial, Georgia, "Times New Roman", Times, serif;
+	color:#555;
+	text-align:center;
+	background-color:#e2e2e2;
+}
+ul,li{list-style: none;padding: 0;margin: 0;}
+.wrap{
+	height: 100%;
+}
+.counter{
+	width: 270px;
+	border: 1px solid #e5e5e5;
+	position: relative;
+	left: 50%;
+	top: 20%;
+	margin-left: -200px;
+	background: #f8f8f8;
+}
+.counter h2{
+	margin: 20px 0 0;
+	color: #898989;
+	font-weight: normal;
+	font-size: 14px;
+	text-align: center;
+}
+.counter form{
+	margin: 20px;
+	overflow: hidden;
+	cursor: default;
+}
+.calsu-screen input{
+	width: 218px;
+	height: 14px;
+	padding: 9px 5px;
+	border: 1px solid #e5e5e5;
+	text-align: right;
+}
+.calsu-btn{
+	float: left;
+	width: 110px;
+}
+.calsu-tool{
+	float: left;
+	width: 120px;
+}
+.calsu-btn ul, .calsu-tool ul{
+	float: left;
+}
+.calsu-btn ul li, .calsu-tool ul li, .calsu-c ul li{
+	float: left;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	color: #666;
+	background: -webkit-gradient(linear, 0 0, 0 100%, from(#f7f7f7), to(#ebebeb));
+	background: rgba(0, 0, 0, 0) -moz-linear-gradient(center top , #f7f7f7, #ebebeb) repeat scroll 0 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 2px;
+    text-shadow: 0 1px 1px #fff;
+    font-family: Verdana, Geneva, sans-serif;
+    margin-left: 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+.calsu-c ul li:first-child{margin-left: 0px;}
+.calsu-btn ul li:hover, .calsu-tool ul li:hover{
+	background: #ebebeb;
+}
+.calsu-btn ul li:nth-child(3n+1){
+	margin-left: 0;
+}
+.calsu-btn ul li.btn-double, .calsu-tool ul li.btn-double{
+	width: 70px;
+}
+.calsu-c ul li.btn-three{
+	width: 110px;
+}
+.btn-red{color: #ff5050 !important;}

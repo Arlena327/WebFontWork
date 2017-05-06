@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+.content{
+	position: relative;
+}  
+.list{
+	float: left;
+	padding: 15px 0 0 15px;
+}  
+.imgBox{
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}  
+.imgBox img{
+	width: 165px;
+	height: auto;
+}
